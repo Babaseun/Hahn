@@ -1,0 +1,10 @@
+03/18/2021 11:14:21 Application Starting Up
+03/18/2021 11:14:22 Now listening on: "https://localhost:5001"
+03/18/2021 11:14:22 Now listening on: "http://localhost:5000"
+03/18/2021 11:14:22 Application started. Press Ctrl+C to shut down.
+03/18/2021 11:14:22 Hosting environment: "Development"
+03/18/2021 11:14:22 Content root path: "C:\Users\hp\Desktop\Hahn\Hahn.ApplicatonProcess.February2021.Web"
+03/18/2021 11:14:23 Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+03/18/2021 11:14:23 Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 158.2478ms
+03/18/2021 11:14:23 Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+03/18/2021 11:14:24 Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 286.8019ms

@@ -1,0 +1,145 @@
+<template>
+  <require from="./asset.css"></require>
+  <section class="container min-container py-md-5 mt-4">
+    <div class="card-panel p-sm-5 position-relative">
+      <div class="text-center">
+        <h1 t="translation:register-here" class="h2 mt-5">Register page</h1>
+      </div>
+      <form
+        class="mt-5"
+        validation-errors.bind="errors"
+        submit.delegate="submit()"
+      >
+        <p t="translation:asset-name" class="small mb-2">Name</p>
+        <div class="position-relative form-group">
+          <label
+            t="translation:assetName"
+            for="Asset Name"
+            class="sr-only control-label"
+            >Asset Name</label
+          >
+          <input
+            keyup.delegate="activateResetButton()"
+            class="form-control input-lg rounded-0"
+            type="text"
+            value.bind="assetName & validateOnChange"
+          />
+        </div>
+        <p class="small mb-2">Email Address Of Department</p>
+        <div class="position-relative form-group">
+          <label
+            t="translation:email-address-of-department"
+            for="email"
+            class="sr-only control-label"
+            >Email Address Of Department</label
+          >
+          <input
+            keyup.delegate="activateResetButton()"
+            class="form-control input-lg rounded-0"
+            type="email"
+            value.bind="emailAddressOfDepartment & validateOnChange"
+          />
+        </div>
+
+        <div class="position-relative form-group">
+          <label>
+            Select Department:<br />
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              value.bind="selectedDepartmentId & validateOnChange"
+            >
+              <option model.bind="null">Choose...</option>
+              <option
+                repeat.for="department of departments"
+                model.bind="department.id"
+              >
+                ${department.name}
+              </option>
+            </select>
+          </label>
+        </div>
+        <p t="translation:purchase-date" class="small mb-2">Age</p>
+        <div class="position-relative form-group">
+          <label
+            t="translation:purchase-date"
+            for="purchase-date"
+            class="sr-only control-label"
+            >Purchase Date</label
+          >
+          <input
+            keyup.delegate="activateResetButton()"
+            class="form-control input-lg rounded-0"
+            type="date"
+            value.bind="purchaseDate & validateOnChange"
+          />
+        </div>
+        <div class="position-relative form-group">
+          <label>
+            Select Country:<br />
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              value.bind="selectedCountryName & validateOnChange"
+            >
+              <option model.bind="null">Choose...</option>
+              <option
+                repeat.for="country of countries"
+                model.bind="country.name"
+              >
+                ${country.name}
+              </option>
+            </select>
+          </label>
+        </div>
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="broken"
+              model.bind="true"
+              checked.bind="broken"
+            />
+            <label t="translation:broken" class="form-check-label">
+              Broken
+            </label>
+          </div>
+          <div class="form-check form-check-inline pt-4 pb-4">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="broken"
+              model.bind="false"
+              checked.bind="broken"
+            />
+            <label
+              t="translation:not-broken"
+              class="form-check-label"
+              for="exampleRadios2"
+            >
+              Not Broken
+            </label>
+          </div>
+        </div>
+        <button
+          t="translation:send"
+          type="submit"
+          class="btn btn-primary btn-block"
+          disabled.bind="errors.length > 0 || enableDisabledButton"
+        >
+          Send
+        </button>
+        <button
+          t="translation:reset"
+          type="reset"
+          class="btn btn-danger"
+          disabled.bind="enableDisabledButton"
+          click.trigger="reset()"
+        >
+          Reset
+        </button>
+      </form>
+    </div>
+  </section>
+</template>

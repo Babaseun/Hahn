@@ -9,7 +9,7 @@ export class App {
 
     config.map([
       {
-        route: ["", "home"],
+        route: ["home"],
         name: "home",
         moduleId: PLATFORM.moduleName("components/home/home"),
         title: "Home",
@@ -21,7 +21,7 @@ export class App {
         title: "confirmation",
       },
       {
-        route: "asset",
+        route: ["", "asset"],
         name: "asset",
         moduleId: PLATFORM.moduleName("components/asset/asset"),
         title: "asset",

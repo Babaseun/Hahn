@@ -57,6 +57,7 @@ export class Asset {
   activate(): void {
     this.countryService.getCountries().then((data) => {
       this.countries = [...data];
+      console.log("asset", data);
     });
   }
   submit(): void {

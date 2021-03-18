@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Hahn.ApplicatonProcess.February2021.Data.Repositories
 {
-    public abstract class BaseRepository<T> : IRepository<T> where T : class
+	public abstract class BaseRepository<T> : IRepository<T> where T : class
     {
         private readonly AssetContext _ctx;
         private readonly DbSet<T> _entitySet;

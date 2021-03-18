@@ -6,7 +6,7 @@ export class AssetService {
     http.configure((config) => {
       config
         .useStandardConfiguration()
-        .withBaseUrl("https://localhost:5001/api");
+        .withBaseUrl("http://localhost:5000/api");
     });
     this.http = http;
   }

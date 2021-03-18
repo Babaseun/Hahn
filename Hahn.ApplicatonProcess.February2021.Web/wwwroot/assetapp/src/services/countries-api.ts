@@ -8,7 +8,6 @@ export class CountryService {
   getCountries(): Promise<any> {
     return this.http
       .fetch("https://restcountries.eu/rest/v2/")
-      .then((response) => response.json())
-      .then((data) => data);
+      .then((response) => response.json());
   }
 }

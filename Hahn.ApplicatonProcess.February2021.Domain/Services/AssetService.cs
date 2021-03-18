@@ -18,12 +18,12 @@ namespace Hahn.ApplicatonProcess.February2021.Domain.Services
 		  public async Task<int> SaveAsset(Asset asset)
 		  {
 				return await _assetRepository.Save(asset);
-		  }
-		  public async Task<Response<Asset>> GetAsset(int id)
+		  } 
+          public async Task<Response<Asset>> GetAsset(int id)
 		  {
 				var response = new Response<Asset>();
 				var asset = await _assetRepository.Find(id);
-
+			    
 				if (asset is null)
 				{
 					 response.Message = $"Asset with Id {id} does not exists";

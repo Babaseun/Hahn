@@ -8,3 +8,34 @@
 03/18/2021 11:14:23 Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 158.2478ms
 03/18/2021 11:14:23 Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
 03/18/2021 11:14:24 Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 286.8019ms
+03/18/2021 11:31:25 Application Starting Up
+03/18/2021 11:31:27 Now listening on: "https://localhost:5001"
+03/18/2021 11:31:27 Now listening on: "http://localhost:5000"
+03/18/2021 11:31:27 Application started. Press Ctrl+C to shut down.
+03/18/2021 11:31:27 Hosting environment: "Development"
+03/18/2021 11:31:27 Content root path: "C:\Users\hp\Desktop\Hahn\Hahn.ApplicatonProcess.February2021.Web"
+03/18/2021 11:31:28 Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+03/18/2021 11:31:28 Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 200.6347ms
+03/18/2021 11:31:28 Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+03/18/2021 11:31:28 Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 336.5791ms
+03/18/2021 11:43:52 Application Starting Up
+03/18/2021 11:43:53 Now listening on: "https://localhost:5001"
+03/18/2021 11:43:53 Now listening on: "http://localhost:5000"
+03/18/2021 11:43:53 Application started. Press Ctrl+C to shut down.
+03/18/2021 11:43:53 Hosting environment: "Development"
+03/18/2021 11:43:53 Content root path: "C:\Users\hp\Desktop\Hahn\Hahn.ApplicatonProcess.February2021.Web"
+03/18/2021 11:43:54 Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+03/18/2021 11:43:54 Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 149.3159ms
+03/18/2021 11:43:54 Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+03/18/2021 11:43:55 Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 276.9827ms
+03/18/2021 11:44:11 Request starting HTTP/1.1 GET http://localhost:5000/api/asset?pageNumber=1&perPage=6 - -
+03/18/2021 11:44:11 Request finished HTTP/1.1 GET http://localhost:5000/api/asset?pageNumber=1&perPage=6 - - - 307 0 - 17.5384ms
+03/18/2021 11:44:11 Request starting HTTP/1.1 GET https://localhost:5001/api/asset?pageNumber=1&perPage=6 - -
+03/18/2021 11:44:11 Executing endpoint '"Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController.GetAll (Hahn.ApplicatonProcess.February2021.Web)"'
+03/18/2021 11:44:12 Route matched with "{action = \"GetAll\", controller = \"Asset\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32)" on controller "Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController" ("Hahn.ApplicatonProcess.February2021.Web").
+03/18/2021 11:44:12 Entity Framework Core "5.0.3" initialized '"AssetContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=Asset.db "
+03/18/2021 11:44:12 Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+03/18/2021 11:44:12 Executed action "Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController.GetAll (Hahn.ApplicatonProcess.February2021.Web)" in 757.6151ms
+03/18/2021 11:44:12 Executed endpoint '"Hahn.ApplicatonProcess.February2021.Web.Controllers.AssetController.GetAll (Hahn.ApplicatonProcess.February2021.Web)"'
+03/18/2021 11:44:12 HTTP "GET" "/api/asset?pageNumber=1&perPage=6" responded 200 in 815.7764 ms
+03/18/2021 11:44:12 Request finished HTTP/1.1 GET https://localhost:5001/api/asset?pageNumber=1&perPage=6 - - - 200 39 application/json;+charset=utf-8 852.1682ms
